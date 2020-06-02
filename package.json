@@ -1,0 +1,16 @@
+{
+  "name": "jiaxing-wechat",
+  "version": "1.0.0",
+  "description": "浙里有嘉",
+  "main": "app.js",
+  "dependencies": {
+    "@vant/weapp": "^1.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

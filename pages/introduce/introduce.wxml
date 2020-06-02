@@ -1,2 +1,2 @@
 <!--pages/introduce/introduce.wxml-->
-<text>pages/introduce/introduce.wxml</text>
+<van-button type="primary">按钮</van-button>

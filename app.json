@@ -1,8 +1,7 @@
 {
   "pages": [
-    "pages/main/main",
-    "pages/main",
-    "pages/introduce/introduce"
+    "pages/introduce/introduce",
+    "pages/main_view/main_view"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -10,6 +9,9 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index"
+  }
 }

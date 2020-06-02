@@ -1,2 +1,2 @@
 <!--pages/main_view/main_view.wxml-->
-<text>pages/main_view/main_view.wxml</text>
+<van-button type="primary">按钮</van-button>
