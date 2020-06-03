@@ -10,7 +10,8 @@
     "pages/main_view/details/wuzhen/map/map",
     "pages/main_view/details/xitang/map/map",
     "pages/main_view/details/nanhu/route/car/car",
-    "pages/main_view/details/nanhu/route/ride/ride"
+    "pages/main_view/details/nanhu/route/ride/ride",
+    "pages/main_view/details/nanhu/route/foot/foot"
   ],
   "permission": {
     "scope.userLocation": {
@@ -20,7 +21,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "浙里有嘉",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
@@ -29,6 +30,7 @@
     "van-transition": "@vant/weapp/transition/index",
     "van-image": "@vant/weapp/image/index",
     "van-icon": "@vant/weapp/icon/index",
-    "van-toast": "@vant/weapp/toast/index"
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index"
   }
 }

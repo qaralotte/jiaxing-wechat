@@ -1,4 +1,3 @@
-// pages/main_view/details/nanhu/route/car/car.js
 import { AMapWX } from '../../../../../../libs/amap-wx';
 import { Config } from '../../../../../../libs/config.js';
 Page({
@@ -14,7 +13,7 @@ Page({
     var that = this;
     var key = Config.key;
     var myAmapFun = new AMapWX({key: key});
-    myAmapFun.getDrivingRoute({
+    myAmapFun.getWalkingRoute({
       origin: lo + "," + la,
       destination: '120.7605633,30.7551063',
       success: function(data){
@@ -41,11 +40,6 @@ Page({
         if(data.paths[0] && data.paths[0].distance){
           that.setData({
             distance: data.paths[0].distance + '米'
-          });
-        }
-        if(data.taxi_cost){
-          that.setData({
-            cost: '打车约' + parseInt(data.taxi_cost) + '元'
           });
         }
           
@@ -78,8 +72,8 @@ Page({
           },{
             iconPath: "https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/map/mapicon_navi_e.png",
             id: 0,
-            latitude: 30.7551063,
-            longitude: 120.7605633,
+            latitude: 30.7428197,
+            longitude: 120.4792848,
             width: 24,
             height: 34
           }]
@@ -93,9 +87,9 @@ Page({
     })
   },
   goToCar: function (e) {
-    // wx.redirectTo({
-      // url: '.'
-    // })
+    wx.redirectTo({
+      url: '../car/car'
+    })
   },
   goToRide: function (e) {
     wx.redirectTo({
@@ -103,8 +97,8 @@ Page({
     })
   },
   goToWalk: function (e) {
-    wx.redirectTo({
-      url: '../foot/foot'
-    })
+    // wx.redirectTo({
+      // url: '../foot/foot'
+    // })
   }
 })

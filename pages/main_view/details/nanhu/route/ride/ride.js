@@ -3,32 +3,20 @@ import { AMapWX } from '../../../../../../libs/amap-wx';
 import { Config } from '../../../../../../libs/config.js';
 Page({
   data: {
-    markers: [{
-      iconPath: "../../img/mapicon_navi_s.png",
-      id: 0,
-      latitude: 39.989643,
-      longitude: 116.481028,
-      width: 23,
-      height: 33
-    },{
-      iconPath: "../../img/mapicon_navi_e.png",
-      id: 0,
-      latitude: 39.90816,
-      longitude: 116.434446,
-      width: 24,
-      height: 34
-    }],
+    markers: [],
     distance: '',
+    longitude: '',
+    latitude: '',
     cost: '',
-    polyline: []
+    polyline: [],
   },
-  onLoad: function() {
+  goToAddress: function(lo, la) {
     var that = this;
     var key = Config.key;
     var myAmapFun = new AMapWX({key: key});
     myAmapFun.getRidingRoute({
-      origin: '116.481028,39.989643',
-      destination: '116.434446,39.90816',
+      origin: lo + "," + la,
+      destination: '120.7605633,30.7551063',
       success: function(data){
         var points = [];
         if(data.paths && data.paths[0] && data.paths[0].steps){
@@ -55,11 +43,6 @@ Page({
             distance: data.paths[0].distance + '米'
           });
         }
-        if(data.taxi_cost){
-          that.setData({
-            cost: '打车约' + parseInt(data.taxi_cost) + '元'
-          });
-        }
           
       },
       fail: function(info){
@@ -67,29 +50,56 @@ Page({
       }
     })
   },
-  goDetail: function(){
-    wx.navigateTo({
-      url: '../navigation_ride_detail/navigation'
+  onLoad: function() {
+    var that = this;
+    var key = Config.key;
+    var myAmapFun = new AMapWX({key: key});
+    myAmapFun.getRegeo({
+      success: function(res){
+        that.setData({
+          longitude: res[0].longitude,
+          latitude: res[0].latitude,
+          points: [{
+            longitude: res[0].longitude,
+            latitude: res[0].latitude
+          }],
+          markers: [{
+            id: 0,
+            longitude: res[0].longitude,
+            latitude: res[0].latitude,
+            iconPath: 'https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/map/mapicon_navi_s.png',
+            width: 23,
+            height: 33
+          },{
+            iconPath: "https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/map/mapicon_navi_e.png",
+            id: 0,
+            latitude: 30.7551063,
+            longitude: 120.7605633,
+            width: 24,
+            height: 34
+          }]
+        })
+        that.goToAddress(res[0].longitude, res[0].latitude);
+      },
+      fail: function(info){
+        //失败回调
+        console.log(info)
+      }
     })
   },
   goToCar: function (e) {
     wx.redirectTo({
-      url: '../navigation_car/navigation'
-    })
-  },
-  goToBus: function (e) {
-    wx.redirectTo({
-      url: '../navigation_bus/navigation'
+      url: '../car/car'
     })
   },
   goToRide: function (e) {
-    wx.redirectTo({
-      url: '../navigation_ride/navigation'
-    })
+    // wx.redirectTo({
+      // url: '../navigation_ride/navigation'
+    // })
   },
   goToWalk: function (e) {
     wx.redirectTo({
-      url: '../navigation_walk/navigation'
+      url: '../foot/foot'
     })
   }
 })

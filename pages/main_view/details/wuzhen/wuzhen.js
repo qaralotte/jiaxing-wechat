@@ -5,4 +5,9 @@ Page({
       url: 'map/map',
     })
   },
+  btn_route:function() {
+    wx.navigateTo({
+      url: 'route/car/car',
+    })
+  },
 })

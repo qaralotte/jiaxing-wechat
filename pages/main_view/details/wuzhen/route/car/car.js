@@ -16,7 +16,7 @@ Page({
     var myAmapFun = new AMapWX({key: key});
     myAmapFun.getDrivingRoute({
       origin: lo + "," + la,
-      destination: '120.7605633,30.7551063',
+      destination: '120.4792848,30.7428197',
       success: function(data){
         var points = [];
         if(data.paths && data.paths[0] && data.paths[0].steps){
@@ -78,8 +78,8 @@ Page({
           },{
             iconPath: "https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/map/mapicon_navi_e.png",
             id: 0,
-            latitude: 30.7551063,
-            longitude: 120.7605633,
+            latitude: 30.7428197,
+            longitude: 120.4792848,
             width: 24,
             height: 34
           }]

@@ -9,7 +9,7 @@
 </view>
 <view id="btn_view">
   <view class="btn">
-    <van-button id="btn_map" type="round" color="#5677FC" size="normal" bindtap="btn_map">
+    <van-button id="btn_map" type="round" color="#5677FC" bindtap="btn_map">
       <van-icon class="btn_icon" name="https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/btn_map.png"></van-icon>
     </van-button>
     <view class="btn_msg">
@@ -17,7 +17,7 @@
     </view>
   </view>
   <view class="btn">
-    <van-button id="btn_route" type="round" color="#5677FC">
+    <van-button id="btn_route" type="round" color="#5677FC" bindtap="btn_route">
       <van-icon class="btn_icon" name="https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/btn_route.png" ></van-icon>
     </van-button>
     <view class="btn_msg">
