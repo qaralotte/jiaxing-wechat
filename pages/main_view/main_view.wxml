@@ -1,2 +1,12 @@
 <!--pages/main_view/main_view.wxml-->
-<van-button type="primary">按钮</van-button>
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" 
+  indicator-active-color="{{activeColor}}" style='height:{{Hei}}'>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <navigator url="{{item.link}}" hover-class="navigator-hover">
+        <image src="{{item.url}}" class="slide-image" width="100%" mode='widthFix' bindload='imgH' />
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+

@@ -1,0 +1,47 @@
+<!--pages/main_view/details/wuzhen/wuzhen.wxml-->
+<view id="container">
+<van-image width="100%" height="200" src="https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/wuzhen/wuzhen2.jpg" mode="widthFix"/>
+<text class="head1">乌镇</text>
+<text>中国</text>
+<text>浙江省嘉兴市桐乡市</text>
+<view class="center">
+  <view class="divLine" />
+</view>
+<view id="btn_view">
+  <view class="btn">
+    <van-button id="btn_map" type="round" color="#5677FC" size="normal" bindtap="btn_map">
+      <van-icon class="btn_icon" name="https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/btn_map.png"></van-icon>
+    </van-button>
+    <view class="btn_msg">
+      <text>地图</text>
+    </view>
+  </view>
+  <view class="btn">
+    <van-button id="btn_route" type="round" color="#5677FC">
+      <van-icon class="btn_icon" name="https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/btn_route.png" ></van-icon>
+    </van-button>
+    <view class="btn_msg">
+      <text>路线</text>
+    </view>
+  </view>
+  <view class="btn">
+    <van-button id="btn_share" type="round" color="#5677FC">
+      <van-icon class="btn_icon" name="https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/btn_share.png" ></van-icon>
+    </van-button>
+    <view class="btn_msg">
+      <text class="btn_msg">分享</text>
+    </view>
+  </view>
+</view>
+<view class="center">
+  <view class="divLine"></view>
+</view>
+<text class="head2">照片 ></text>
+<view id="img_view">
+  <van-image class="img" width="35%" height="125" radius="5%" src="https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/wuzhen/wuzhen-pic1.jpg" />
+  <van-image class="img" width="55%" height="125" radius="5%" src="https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/wuzhen/wuzhen-pic2.jpg" />
+</view>
+<text class="head2">概况 ></text>
+<text>乌镇位于浙江省桐乡市，是江南著名古镇之一。镇域面积71.19 平方公里，建城区面积2.5平方千米，总人口6万，镇区常住人口1.2万。乌镇景区已被评为中国国家5A级景区，是全国20个黄金周预报景点之一。2019年被评为中国文化百强镇。</text>
+<text/><text/>
+</view>

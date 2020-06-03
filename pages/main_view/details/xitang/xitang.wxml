@@ -1,0 +1,48 @@
+<!--pages/main_view/details/xitang/xitang.wxml-->
+<view id="container">
+<van-image width="100%" height="200" src="https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/wuzhen/wuzhen2.jpg" mode="widthFix"/>
+<text class="head1">西塘</text>
+<text>中国</text>
+<text>浙江省嘉兴市嘉善县</text>
+<view class="center">
+  <view class="divLine" />
+</view>
+<view id="btn_view">
+  <view class="btn">
+    <van-button id="btn_map" type="round" color="#5677FC" size="normal" bindtap="btn_map">
+      <van-icon class="btn_icon" name="https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/btn_map.png"></van-icon>
+    </van-button>
+    <view class="btn_msg">
+      <text>地图</text>
+    </view>
+  </view>
+  <view class="btn">
+    <van-button id="btn_route" type="round" color="#5677FC">
+      <van-icon class="btn_icon" name="https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/btn_route.png" ></van-icon>
+    </van-button>
+    <view class="btn_msg">
+      <text>路线</text>
+    </view>
+  </view>
+  <view class="btn">
+    <van-button id="btn_share" type="round" color="#5677FC">
+      <van-icon class="btn_icon" name="https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/btn_share.png" ></van-icon>
+    </van-button>
+    <view class="btn_msg">
+      <text class="btn_msg">分享</text>
+    </view>
+  </view>
+</view>
+<view class="center">
+  <view class="divLine"></view>
+</view>
+<text class="head2">照片 ></text>
+<view id="img_view">
+  <van-image class="img" width="35%" height="125" radius="5%" src="https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/xitang/xitang_pic1.jpg" />
+  <van-image class="img" width="55%" height="125" radius="5%" src="https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/xitang/xitang_pic2.jpg" />
+</view>
+<text class="head2">概况 ></text>
+<text>西塘，古称胥塘、斜塘，又名平川，位于浙江省嘉善县，在嘉善县城北10公里处，是一座已有千年历史文化的古镇。面积约1平方公里，春秋战国时期是吴越两国的相交之地，故有“吴根越角”和“越角人家”之称。
+</text>
+<text/><text/>
+</view>

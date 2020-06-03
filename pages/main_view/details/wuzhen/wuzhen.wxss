@@ -1,0 +1,74 @@
+/* pages/main_view/details/wuzhen/wuzhen.wxss */
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+.divLine {
+  background: #E0E3DA;
+  width: 90%;
+  height: 5rpx;
+  margin-top: 3%;
+}
+
+text {
+  margin: 10px;
+  margin-bottom: 1px;
+  margin-left: 20px;
+  font-weight: lighter;
+  font-size: 0.9em;
+}
+
+.head1 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  font-weight: normal;
+}
+
+.head2 {
+  font-size: 1.2em;
+  margin-top: 20px;
+  font-weight: normal;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn_view {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  text-align: center;
+  width: auto;
+  height: auto;
+  margin-top: 5%;
+}
+
+.btn_msg {
+  margin-top: 5%;
+  margin-right: 7%;
+  margin-bottom: 5%;
+}
+
+.btn_icon {
+  margin-top: 20%;
+}
+
+#img_view {
+  margin: 5%;
+}
+
+.img {
+  margin: auto 2.5%;
+}

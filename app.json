@@ -1,8 +1,22 @@
 {
   "pages": [
+    "pages/main_view/main_view",
+    "pages/map/map",
+    "pages/main_view/details/nanhu/nanhu",
+    "pages/main_view/details/xitang/xitang",
+    "pages/main_view/details/wuzhen/wuzhen",
     "pages/introduce/introduce",
-    "pages/main_view/main_view"
+    "pages/main_view/details/nanhu/map/map",
+    "pages/main_view/details/wuzhen/map/map",
+    "pages/main_view/details/xitang/map/map",
+    "pages/main_view/details/nanhu/route/car/car",
+    "pages/main_view/details/nanhu/route/ride/ride"
   ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
@@ -10,8 +24,11 @@
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
-
   "usingComponents": {
-    "van-button": "@vant/weapp/button/index"
+    "van-button": "@vant/weapp/button/index",
+    "van-transition": "@vant/weapp/transition/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-toast": "@vant/weapp/toast/index"
   }
 }
