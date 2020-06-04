@@ -1,0 +1,27 @@
+/* pages/main_view/view/view.wxss */
+
+#_view {
+  margin-top: 5%;
+  height: 1500rpx;
+}
+
+#_view image {
+  margin: 10%;
+  box-shadow: 0 0 20px;
+  position: relative;
+}
+
+.mg {
+  margin-top: 10%;
+}
+
+.item_msg_view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item_msg_view text {
+  margin-left: 10%;
+  text-align: center;
+}

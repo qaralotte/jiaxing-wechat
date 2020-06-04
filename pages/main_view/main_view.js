@@ -11,8 +11,8 @@ Page({
   },
  
   onLoad: function() {
-    var that = this
-    var pic_jiaxing = []
+    var that = this;
+    var pic_jiaxing = [];
     pic_jiaxing.push("https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/jiaxing/jiaxing1.jpg")
     pic_jiaxing.push("https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/jiaxing/jiaxing2.jpg")
     pic_jiaxing.push("https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/jiaxing/jiaxing3.jpg")
@@ -20,7 +20,7 @@ Page({
       pic_jiaxing: pic_jiaxing,
     })
 
-    var pic_place = []
+    var pic_place = [];
     pic_place.push("https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/nanhu/nanhu_pic1.jpg")
     pic_place.push("https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/wuzhen/wuzhen-pic1.jpg")
     pic_place.push("https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/xitang/xitang_pic1.jpg")
@@ -29,7 +29,7 @@ Page({
     that.setData({
       pic_place: pic_place,
     })
-    var pic_food = []
+    var pic_food = [];
     pic_food.push("https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/food/food1.png")
     pic_food.push("https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/food/food2.jpg")
     pic_food.push("https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/food/food3.jpg")
@@ -44,5 +44,29 @@ Page({
   onChange(event) {
     // event.detail 的值为当前选中项的索引
     this.setData({ active: event.detail });
+    if (event.detail == 1) {
+      wx.redirectTo({
+        url: 'browse/browse',
+      })
+    } else if (event.detail == 2) {
+      wx.redirectTo({
+        url: 'me/me',
+      })
+    }
+  },
+  btn_view:function() {
+    wx.navigateTo({
+      url: 'view_map/view_map',
+    })
+  },
+  btn_food:function() {
+    wx.navigateTo({
+      url: 'view_map/view_map',
+    })
+  },
+  btn_map:function() {
+    wx.navigateTo({
+      url: 'map/map',
+    })
   },
 })

@@ -68,11 +68,16 @@ text {
 
 #lun {
   margin-top: 5%;
+  height: 400rpx;
+}
+
+#lun swiper-item {
+  border-radius: 10%;
 }
 
 #lun image {
   margin: 7%;
-  box-shadow: #212121 2px 2px 2px;
+  border-radius: 10%;
 }
 
 .mg {

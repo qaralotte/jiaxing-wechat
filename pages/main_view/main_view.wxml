@@ -1,6 +1,4 @@
 <!--pages/main_view/main_view.wxml-->
-<view class="mg"></view>
-<text class="head1">邂逅最美嘉兴 ></text>
 <swiper id="lun" indicator-dots="false" autoplay="true" interval="3000" duration="1000" previous-margin='50' next-margin='50'>
   <block wx:for="{{pic_jiaxing}}" wx:key="index">
     <swiper-item>
@@ -30,11 +28,11 @@
     </view>
   </view>
   <view class="btn">
-    <van-button id="btn_share"  bindtap="btn_hotel">
+    <van-button id="btn_share"  bindtap="btn_map">
       <van-icon class="btn_icon" size="large" name="https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/btn_hotel.png" ></van-icon>
     </van-button>
     <view class="btn_msg">
-      <text class="btn_msg">酒店</text>
+      <text class="btn_msg">地图</text>
     </view>
   </view>
 </view>
@@ -55,7 +53,7 @@
 <view class="mg"></view>
 <text class="head2">美食小吃 ></text>
 <view class=""></view>
-<swiper id="food" indicator-dots="false" autoplay="false" interval="2147483647" duration="1000" display-multiple-items="2.5">
+<swiper id="food" indicator-dots="false" autoplay="false" interval="2147483647" duration="1000" display-multiple-items="1.8">
   <block wx:for="{{pic_food}}" wx:key="index">
     <swiper-item>
       <image src="{{item}}" class="slide-image" mode="aspectFill" bindtap='previewImg' data-previewurl='{{picList}}'
@@ -63,12 +61,9 @@
     </swiper-item>   
   </block>  
 </swiper>
-<text>\n</text>
-<text>\n</text>
-<text>\n</text>
-<text>\n</text>
+<text>\n</text><text>\n</text><text>\n</text><text>\n</text>
 <van-tabbar active="{{ active }}" bind:change="onChange">
-  <van-tabbar-item icon="https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/tab/tab-home.png">主页</van-tabbar-item>
+  <van-tabbar-item active icon="https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/tab/tab-home.png">主页</van-tabbar-item>
   <van-tabbar-item icon="https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/tab/tab-near.png">发现</van-tabbar-item>
   <van-tabbar-item icon="https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/tab/tab-person.png">我的</van-tabbar-item>
 </van-tabbar>

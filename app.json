@@ -1,7 +1,8 @@
 {
   "pages": [
+    "pages/main_view/view/view",
     "pages/main_view/main_view",
-    "pages/map/map",
+    "pages/main_view/me/me",
     "pages/main_view/details/nanhu/nanhu",
     "pages/main_view/details/xitang/xitang",
     "pages/main_view/details/wuzhen/wuzhen",
@@ -11,7 +12,9 @@
     "pages/main_view/details/xitang/map/map",
     "pages/main_view/details/nanhu/route/car/car",
     "pages/main_view/details/nanhu/route/ride/ride",
-    "pages/main_view/details/nanhu/route/foot/foot"
+    "pages/main_view/details/nanhu/route/foot/foot",
+    "pages/main_view/browse/browse",
+    "pages/main_view/map/map"
   ],
   "permission": {
     "scope.userLocation": {

@@ -1,19 +1,7 @@
-/* pages/main_view/details/nanhu/map/map.wxss */
-.section{
-  height: 30px;
-  width: 100%;
-}
-.section input{
-  width:90%;
-  margin:5px auto;
-  border:1px solid #c3c3c3;
-  height:30px;
-  border-radius: 3px;
-  padding: 0 5px;
-}
+/* pages/main_view/map/map.wxss */
 .map_container{
   position: absolute;
-  top: 42px;
+  top: 0;
   bottom: 80px;
   left: 0;
   right: 0;
@@ -35,9 +23,6 @@ text{
   margin: 5px 0;
   display: block;
   font-size:12px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 .h1{
   margin: 15px 0;
