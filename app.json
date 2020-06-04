@@ -1,6 +1,5 @@
 {
   "pages": [
-    "pages/main_view/view/view",
     "pages/main_view/main_view",
     "pages/main_view/me/me",
     "pages/main_view/details/nanhu/nanhu",
@@ -14,7 +13,8 @@
     "pages/main_view/details/nanhu/route/ride/ride",
     "pages/main_view/details/nanhu/route/foot/foot",
     "pages/main_view/browse/browse",
-    "pages/main_view/map/map"
+    "pages/main_view/map/map",
+    "pages/main_view/place/place"
   ],
   "permission": {
     "scope.userLocation": {
@@ -34,6 +34,7 @@
     "van-image": "@vant/weapp/image/index",
     "van-icon": "@vant/weapp/icon/index",
     "van-tabbar": "@vant/weapp/tabbar/index",
-    "van-tabbar-item": "@vant/weapp/tabbar-item/index"
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+    "card": "/wx-cards/title-card/title-card"
   }
 }

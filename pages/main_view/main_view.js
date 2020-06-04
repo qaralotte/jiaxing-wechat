@@ -56,7 +56,7 @@ Page({
   },
   btn_view:function() {
     wx.navigateTo({
-      url: 'view_map/view_map',
+      url: 'place/place',
     })
   },
   btn_food:function() {

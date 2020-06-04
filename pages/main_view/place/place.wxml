@@ -1,0 +1,35 @@
+<!--pages/main_view/place/place.wxml-->
+
+<card
+    headerImg='/pages/wx-cards/images/head.jpeg'
+    title='南湖旅游区'
+    time='September 25, 2019'
+    img='https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/nanhu/nanhu1.jpg'
+    context='南湖风景名胜区位于嘉兴市区，是AAAAA级旅游区，规划区域总面积276.3公顷，其中水域面积98公顷。南湖因地处嘉兴城南而得名，与西南湖合称鸳鸯湖。嘉兴南湖与南京玄武湖和杭州西湖并称江南三大名湖，素来以“轻烟拂渚，微风欲来”的迷人景色著称于世。'
+    isLiked="{{false}}"
+    isShowShare='{{true}}'
+    bind:like='handleLike'
+    bind:share='handleShare'
+    bindtap="nanhu"></card>
+<card
+    headerImg='/pages/wx-cards/images/head.jpeg'
+    title='乌镇'
+    time='September 25, 2019'
+    img='https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/wuzhen/wuzhen-pic1.jpg'
+    context='乌镇位于浙江省桐乡市，是江南著名古镇之一。镇域面积71.19 平方公里，建城区面积2.5平方千米，总人口6万，镇区常住人口1.2万。乌镇景区已被评为中国国家5A级景区，是全国20个黄金周预报景点之一。2019年被评为中国文化百强镇。'
+    isLiked="{{false}}"
+    isShowShare='{{true}}'
+    bind:like='handleLike'
+    bind:share='handleShare'
+    bindtap="wuzhen"></card>
+<card
+    headerImg='/pages/wx-cards/images/head.jpeg'
+    title='西塘'
+    time='September 25, 2019'
+    img='https://jiaxing-wechat.oss-cn-hangzhou.aliyuncs.com/xitang/xitang1.jpg'
+    context='西塘，古称胥塘、斜塘，又名平川，位于浙江省嘉善县，在嘉善县城北10公里处，是一座已有千年历史文化的古镇。面积约1平方公里，春秋战国时期是吴越两国的相交之地，故有“吴根越角”和“越角人家”之称。'
+    isLiked="{{false}}"
+    isShowShare='{{true}}'
+    bind:like='handleLike'
+    bind:share='handleShare'
+    bindtap="xitang"></card>
